@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:id="@+id/item_employee_ll_parent">
+    <TextView
+        android:id="@+id/item_employee_tv_fullname"
+        android:text="Long"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true" />
+    <TextView
+        android:id="@+id/item_employee_tv_position"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="@string/staff"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:singleLine="true" />
+    <ImageView
+        android:id="@+id/item_employee_iv_manager"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_manager"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+        android:id = "@+id/header"
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        android:text="Quản lý nhân viên"
+        android:background="@color/green"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/margin_basex4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Mã NV:"
+        android:id="@+id/tv_manv"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/header"
+        />
+    <EditText
+        android:id="@+id/et_manv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="m4"
+        android:layout_alignBaseline="@id/tv_manv"
+        android:layout_toRightOf="@id/tv_manv"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Tên NV:"
+        android:id="@+id/tv_name"
+        android:paddingLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_manv"
+        />
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nguyen Thi Ngoc Quyen"
+        android:layout_alignBaseline="@+id/tv_name"
+        android:layout_toRightOf="@+id/tv_name"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Loại NV:"
+        android:id="@+id/tv_loaiNV"
+        android:paddingLeft="10dp"
+        android:paddingVertical="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_name"
+        />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignTop="@+id/tv_loaiNV"
+        android:layout_toRightOf="@+id/tv_loaiNV"
+        >
+        <RadioButton
+            android:id="@+id/radChinhthuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Chính thức" />
+
+        <RadioButton
+            android:id="@+id/radThoivu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời vụ" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_nhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="100dp"
+        android:padding="@dimen/margin_base"
+        android:text="Nhập" />
+
+    <TextView
+        android:id = "@+id/tv_selection"
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        android:background="@color/green"
+        android:layout_below="@id/btn_nhap"
+        />
+
+    <ListView
+        android:id="@+id/lv_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_selection"
+        />
+</RelativeLayout>

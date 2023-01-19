@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView
+        android:text="STUDENTS"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:paddingVertical="10dp"
+        android:background="@color/light_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_basex4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Tên"
+        android:id="@+id/tv_name"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_name"
+        android:layout_toRightOf="@id/tv_name"
+        android:hint="John"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ"
+        android:id="@+id/tv_addr"
+        android:paddingLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_name"
+        />
+
+    <EditText
+        android:id="@+id/et_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_addr"
+        android:layout_toRightOf="@+id/tv_addr"
+        android:hint="Ho Chi Minh"
+        android:minHeight="48dp" />
+
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="SĐT"
+        android:id="@+id/tv_phone"
+        android:paddingLeft="10dp"
+        android:paddingVertical="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_addr"
+        />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_phone"
+        android:layout_toRightOf="@+id/tv_phone"
+        android:hint="xxxxxxxxxx"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_phone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="150dp"
+        android:backgroundTint="@color/color9"
+        android:textColor="@color/black"
+        android:padding="@dimen/margin_base"
+        android:text="@string/add" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@id/btn_add"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

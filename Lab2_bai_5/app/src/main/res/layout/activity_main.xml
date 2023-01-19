@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color7"
+    >
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_basex4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:id="@+id/tv_name"
+        android:paddingLeft="10dp"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_name"
+        android:layout_toRightOf="@+id/tv_name"
+        android:hint="Bun dau"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Thumbnail"
+        android:id="@+id/tv_thumbnail"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_name"
+        android:labelFor="@+id/sp_thumbnail"
+        />
+    <Spinner
+        android:id="@+id/sp_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_thumbnail"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/tv_thumbnail"
+        android:minHeight="48dp"
+        android:spinnerMode="dialog">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Promotion"
+        android:id="@+id/tv_promotion"
+        android:paddingLeft="10dp"
+        android:paddingVertical="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_thumbnail"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox_id"
+        android:text=""
+        android:checked="false"
+        android:layout_alignBaseline="@+id/tv_promotion"
+        android:layout_toRightOf="@+id/tv_promotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_nhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="50dp"
+        android:backgroundTint="@color/color9"
+        android:textColor="@color/black"
+        android:padding="@dimen/margin_base"
+        android:text="ADD A NEW DISH" />
+
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:layout_below="@id/btn_nhap" />
+</RelativeLayout>

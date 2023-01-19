@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingHorizontal="16dp"
+    android:orientation="horizontal"
+    android:id="@+id/item_student_ll_parent">
+<!--    <TextView-->
+<!--        android:id="@+id/item_student_tv_id"-->
+<!--        android:text="01"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:singleLine="true" />-->
+    <TextView
+        android:id="@+id/item_student_tv_name"
+        android:text="John"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true" />
+    <TextView
+        android:id="@+id/item_student_tv_addr"
+        android:text="Khanh Hoa"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+</LinearLayout>
